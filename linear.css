@@ -1,0 +1,133 @@
+body {
+    min-height: 10000vh;
+    /* background-color: black; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: var(--font-regular); */
+  min-height: 100vh;
+  /* background-color: #000; */
+  background-image:
+  /* radial-gradient(
+    circle at top,
+    rgba(0, 0, 0, 0.08),
+    transparent 0%
+  ), */
+
+  linear-gradient(180deg,#0a0a0a 50%,#3d3d3d 100%);
+
+  color: white;
+}
+
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    border-bottom: 1px solid rgb(36, 36, 36);
+
+}
+.logo {
+    font-size: 23px;
+    
+}
+img {
+    position: relative;
+    left: -260px;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: small;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    transition: 0.3s;
+    
+}
+.nav-links a:hover{
+    color: white;
+    border-radius: 30px;
+    border: 0px solid rgb(43, 43, 43);
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.buttons a:hover{  
+    color: white;
+    text-decoration: none;
+    transition: 0.3;
+}
+button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 999px;
+
+  background: white;
+  color: black;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+nav {
+    position: sticky;
+    top: 0;
+
+}
+
+/* .buttons a :hover{ 
+    color: white; "gap kabhi nahi chod na a and :hover ke bich!!"
+} */
+.heading1 {
+    font-size: 60px;
+    font-family: Inter, sans-serif;
+    max-width: 900px;
+    padding-left: 100px;
+    font-weight: 600;
+
+ }
+.heading2 {
+    color: grey;
+    padding-left: 100px;
+    position: relative;
+    top: 26px;
+}
+.sidetracker {
+        color: #e2e2e2;
+        padding-left: 1120px;
+        position: relative;
+        top: 20px;
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    background: rgb(1, 132, 238);
+    border-radius: 70px;
+    box-shadow: 0 0 12px #5b5eff;
+    position: relative;
+    left: 1090px;
+    top: 33px;
+}
+.heading3 {
+    color: #6d6d6d;
+        padding-left: 1286px;
+        position: relative;
+        top: 3px;
+}
