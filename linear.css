@@ -30,6 +30,8 @@ body {
     align-items: center;
     padding: 20px 150px;
     border-bottom: 1px solid rgb(36, 36, 36);
+    backdrop-filter: blur(10px);
+
 
 }
 .logo {
@@ -89,7 +91,8 @@ button:hover{
 nav {
     position: sticky;
     top: 0;
-
+    z-index: 999;
+    background-color: #0a0a0ae6;
 }
 
 /* .buttons a :hover{ 
@@ -100,7 +103,7 @@ nav {
     font-family: Inter, sans-serif;
     max-width: 900px;
     padding-left: 100px;
-    font-weight: 600;
+    font-weight: 500;
 
  }
 .heading2 {
@@ -110,10 +113,14 @@ nav {
     top: 26px;
 }
 .sidetracker {
-        color: #e2e2e2;
+        color: #bcbbbb;
         padding-left: 1120px;
         position: relative;
         top: 20px;
+         transition: 0.3s ease;
+}
+.sidetracker:hover{
+  color: rgb(255, 255, 255);
 }
 .dot {
     width: 6px;
@@ -130,4 +137,276 @@ nav {
         padding-left: 1286px;
         position: relative;
         top: 3px;
+        transition: 0.3s ease;
 }
+.heading3:hover{
+    color: #909090;
+}
+.modal {
+    height: 120vh;
+    width: 182.4vb;
+    border: 1px solid rgb(32, 34, 36);
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    position: relative;
+    top: 80px;
+    left: 100px;
+    background-color: #101010;
+    z-index: 999px;
+    /* background-color: linear-gradient(45deg,#0a0a0a 150%,#3d3d3d 90%);  */
+}
+.box1 {
+    height: 116vh;
+    width: 148vb;
+    border: 1px solid rgb(32, 34, 36);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    top: 8px;
+    left: 243px;
+    background-color: #121212;
+}
+.navbtn {
+    width: 17vb;
+    height: 4.5vh;
+    padding-top: 5px;
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: #101010;
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+    transition:0.2s;
+    text-align: justify center;
+    position: relative;
+    bottom: 775px;
+    left: 7pc;
+    font-size: 14px;
+    font-weight: 600;
+
+
+}
+/* .navbtn:hover{
+  background:#1d1d1d;
+} */
+
+.navbtn:hover{
+    background-color: rgb(23, 23, 23);
+}
+.sidebar{
+    width:250px;
+    padding: 10px;
+    background:#0d0d0d00;
+    height:28vh;
+    position: relative;
+    bottom: 49pc;
+    left: 100px;
+    
+}
+
+.nav-item{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    color:#b3b3b3;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-weight: 100;
+    font-size: 13px;
+    
+}
+
+.nav-item:hover{
+    background:#191919;
+    color:white;
+}
+
+/* .active{
+    background:#1b1b1b;
+
+    color:white;
+} */
+.nav-item1{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    color:#b3b3b3;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-size: 13px;
+}
+
+.nav-item1:hover{
+    background:#191919;
+    color:rgb(255, 255, 255);
+}
+.nav-item2{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    color:#b3b3b3;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-size: 13px;
+}
+
+.nav-item2:hover{
+    background:#191919;
+    color:white;
+}
+.yellowdot {
+    color: yellow;
+     display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-weight: 100;
+    font-size: 13px;
+}
+.greypage {
+    color: rgb(176, 176, 176);
+     display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-weight: 100;
+    font-size: 13px;
+}
+.neonstick {
+    color: rgb(0, 225, 255);
+     display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-weight: 100;
+    font-size: 13px;
+}
+.orangeanalysis {
+    color: rgb(255, 77, 0);
+     display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.25s;
+    margin-bottom:3px;
+    font-weight: 100;
+    font-size: 13px;
+}
+.myimage {
+    height: 700px;
+    position: relative;
+    bottom: 32.8pc;
+    left: 14.7pc;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  
+
+}
+.workspace {
+    color: rgb(78, 85, 89);
+    font-size: 13.7px;
+    gap: 7px;
+    padding: 7px 14px;
+    font-weight: 100;
+}
+.favourites {
+    color: rgb(78, 85, 89);
+    font-size: 13.7px;
+    gap: 7px;
+    padding: 7px 14px;
+    font-weight: 100;
+}
+/* .vercel {
+   
+}
+.cursor {
+   
+}
+.oscar {
+}
+.openai {
+   
+}
+
+.coinbase {
+  
+} 
+.boom {
+    
+} 
+.cashapp {
+}
+.ramp {
+   
+}  */
+.logos {
+    
+display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 17pc;
+    gap: 60px;
+    width: 100%;
+    height: 25px;
+    /* background-color: #5b5eff; */
+    margin-bottom: 10pc;
+    position: relative;
+    bottom: 100px;
+}
+
+.hero{
+    /* padding: 120px 100px;
+    background: black; */
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.h2{
+    font-size: 90px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -4px;
+
+    max-width: 500px;
+}
+
+.h3{
+    font-size: 28px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+
+    max-width: 600px;
+    color: #b3b3b3;
+}
+
